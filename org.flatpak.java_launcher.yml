@@ -1,0 +1,26 @@
+id: org.flatpak.java_launcher
+runtime: org.freedesktop.Platform
+runtime-version: '22.08'
+sdk: org.freedesktop.Sdk
+command: java_launcher.sh
+sdk-extensions:
+- org.freedesktop.Sdk.Extension.openjdk11
+finish-args:
+  - --share=ipc
+  - --share=network
+  - --device=dri
+  - --socket=pulseaudio
+  - --socket=x11
+  - --env=JAVA_HOME=/app/jre
+modules:
+  - name: openjdk
+    buildsystem: simple
+    build-commands:
+      - "/usr/lib/sdk/openjdk11/install.sh"
+  - name: java_launcher
+    buildsystem: simple
+    build-commands:
+      - install -D java_launcher.sh /app/bin/java_launcher.sh
+    sources:
+      - type: file
+        path: java_launcher.sh
