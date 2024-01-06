@@ -12,7 +12,7 @@ This project provides a Flatpak manifest and a launcher script for running Java 
 - Leverages Flatpak's sandboxing features for resource control and permission management
 
 ## Files
-- org.flatpak.java_launcher.yml: The Flatpak manifest file that defines the application's runtime, SDK, dependencies, and permissions.
+- io.github.overwatcheddude.flatpak_java_launcher.yml: The Flatpak manifest file that defines the application's runtime, SDK, dependencies, and permissions.
 - java_launcher.sh: A shell script that prompts the user to select a JAR file and then executes it using the included OpenJDK 11 runtime.
 
 ## Building and Running
@@ -23,14 +23,14 @@ Open a terminal in the project directory.
 Run the following command to build the Flatpak:
 
 ```bash
-flatpak-builder build org.flatpak.java_launcher.yml
+flatpak-builder build io.github.overwatcheddude.flatpak_java_launcher.yml
 ```
 
 ### Run the Launcher:
 After successful build, run the launcher using:
 
 ```bash
-flatpak run org.flatpak.java_launcher
+flatpak run io.github.overwatcheddude.flatpak_java_launcher
 ```
 
 The launcher will prompt you to select a JAR file to execute.
