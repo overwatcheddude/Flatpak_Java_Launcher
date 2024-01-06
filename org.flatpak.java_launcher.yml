@@ -12,6 +12,7 @@ finish-args:
   - --socket=pulseaudio
   - --socket=x11
   - --env=JAVA_HOME=/app/jre
+  - --persist=
 modules:
   - name: openjdk
     buildsystem: simple
