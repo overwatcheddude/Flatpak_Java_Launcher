@@ -18,12 +18,26 @@ This project provides a Flatpak manifest and a launcher script for running Java 
 ## Building and Running
 ### Install Flatpak
 Ensure you have Flatpak installed on your system. Refer to the official Flatpak documentation for installation instructions: https://flatpak.org/setup/
+### Obtaining the Repository
+#### Cloning with Git
+If you have Git installed, you can clone the repository using the following command:
+```bash
+git clone https://github.com/overwatcheddude/Flatpak_Java_Launcher.git
+```
+#### Downloading as a .zip File
+If you don't have Git, you can download the repository as a .zip file by clicking the "Code" button on the GitHub repository page and then selecting "Download ZIP". Ensure to extract the contents of the .zip file.
+### Dependencies
+Before building, ensure you have the following Flatpak dependencies installed:
+```bash
+flatpak install flathub org.flatpak.Builder org.freedesktop.Platform//22.08 org.freedesktop.Sdk//22.08 runtime/org.freedesktop.Sdk.Extension.openjdk11/x86_64/22.08
+```
+
 ### Build the Flatpak:
 Open a terminal in the project directory.
 Run the following command to build the Flatpak:
 
 ```bash
-flatpak-builder build io.github.overwatcheddude.flatpak_java_launcher.yml
+flatpak run org.flatpak.Builder --user --install --force-clean build-dir io.github.overwatcheddude.flatpak_java_launcher.yml
 ```
 
 ### Run the Launcher:
