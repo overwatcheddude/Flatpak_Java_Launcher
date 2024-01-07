@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Name=Java Launcher
+Comment=Run Java JAR files in a Flatpak environment
+Keywords=java;jar;
+Exec=java_launcher.sh
+Icon=io.github.overwatcheddude.flatpak_java_launcher
+Categories=Development;

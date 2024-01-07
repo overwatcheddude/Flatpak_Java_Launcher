@@ -22,6 +22,12 @@ modules:
     buildsystem: simple
     build-commands:
       - install -D java_launcher.sh /app/bin/java_launcher.sh
+      - install -D io.github.overwatcheddude.flatpak_java_launcher.desktop /app/share/applications/io.github.overwatcheddude.flatpak_java_launcher.desktop
+      - install -D io.github.overwatcheddude.flatpak_java_launcher.svg /app/share/icons/hicolor/scalable/apps/io.github.overwatcheddude.flatpak_java_launcher.svg
     sources:
       - type: file
         path: java_launcher.sh
+      - type: file
+        path: io.github.overwatcheddude.flatpak_java_launcher.desktop
+      - type: file
+        path: io.github.overwatcheddude.flatpak_java_launcher.svg
