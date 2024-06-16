@@ -29,7 +29,7 @@ If you don't have Git, you can download the repository as a .zip file by clickin
 ### Dependencies
 Before building, ensure you have the following Flatpak dependencies installed:
 ```bash
-flatpak install flathub org.flatpak.Builder org.freedesktop.Platform//22.08 org.freedesktop.Sdk//22.08 runtime/org.freedesktop.Sdk.Extension.openjdk11/x86_64/22.08
+flatpak install flathub org.flatpak.Builder org.freedesktop.Platform//23.08 org.freedesktop.Sdk// runtime/org.freedesktop.Sdk.Extension.openjdk11/x86_64/23.08
 ```
 
 ### Build the Flatpak:
