@@ -1,6 +1,6 @@
 id: io.github.overwatcheddude.flatpak_java_launcher
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: java_launcher.sh
 sdk-extensions:
